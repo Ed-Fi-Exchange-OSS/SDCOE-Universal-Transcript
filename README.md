@@ -1,6 +1,8 @@
-# {Insert Repository Name Here}
+# SDCOE-Universal-Transcript
 
-{Insert project information here}
+The SDCOE Universal Transcript Initiative is an exploration into the potential of digital learner records. Our concept was to build a working prototype transcript technology around the ODS, essentially around the idea of reading data from multiple ODS’s using Ed-Fi Composites, assembling student transcript data into an electronic document (JSON file), leveraging blockchain technology for validating a transcript and identify document tampering, and generating printable transcripts.
+
+Scope:  The scope of this project defines a primary goal of producing a digital printable student transcript (PDF) with data drawn from one or more ODS’s in an electronic form that can be validated using blockchain technology.
 
 ## Legal Information
 
