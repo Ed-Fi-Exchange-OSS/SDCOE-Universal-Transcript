@@ -1,7 +1,6 @@
 # <Insert Repository Name Here> Notices
 
-This product includes software developed at the [Ed-Fi
-Alliance](https://www.ed-fi.org).
+This product includes software developed at the San Diego County Office of Education and Ed-Fi Alliance.
 
 Copyright (c) 2021 Ed-Fi Alliance, LLC and contributors.
 
