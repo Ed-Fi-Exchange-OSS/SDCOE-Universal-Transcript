@@ -1,0 +1,42 @@
+{
+  "ods": [
+    {
+      "clientId": "THE_SECRET_CLIENT_KEY",
+      "clientSecret": "THE_SECRET_CLIENT_SECRET",
+      "baseUrl": "THE_ODS_BASE_URL"
+    }
+  ],
+  "rop": [
+    {
+      "courseCode": "MATH-03",
+      "courseTerm": "Fall_2012",
+      "requestedROPCertificate": true,
+      "requestedROPTranscript": false
+    },
+    {
+      "courseCode": "MATH-05",
+      "courseTerm": "Fall_2013",
+      "requestedROPCertificate": false,
+      "requestedROPTranscript": true
+    }
+  ],
+  "digitalSigning": {
+    "verification": {
+      "did": {
+        "nodeUrl": "127.0.0.1",
+        "nodePort": 8545,
+        "didRegistryAddress": "0x77777777788888889999999",
+        "verificationKeyId": "did:ethr:0x000011112222333344445555EEEE#delegate-1"
+      },
+      "file": {
+        "verificationKeyId": "urn:sdcoe-keypair:Li9zYXZlZERhdGEvc2VjcmV0L3B1YmxpYy5rZXk=#autocreated_sample"
+      }
+    },
+    "signing": {
+      "signingKeyId": "urn:sdcoe-keypair:Li9zYXZlZERhdGEvc2VjcmV0L3ByaXZhdGUua2V5#autocreated_sample",
+      "issuerId": "urn:sdcoe:transcript-project-2021",
+      "jwtIdentifier": "urn:sdcoe-request:xyz"
+    }
+  },
+  "resourceDir": "./savedData"
+}

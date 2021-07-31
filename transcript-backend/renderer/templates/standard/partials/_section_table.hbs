@@ -1,0 +1,51 @@
+<div class="table-section">
+
+  <table width="100%" style="border:0.75pt solid #D8D8D8;">
+    <thead style="font-weight: 800; font-size: 7.5pt; line-height: 9pt; text-transform: uppercase; color: #6A6A6A;">
+      <tr style="height: 16.5pt; background-color: #DFDFDF;">
+        <th width="40"></th>
+        <th width="70">ID</th>
+        <th width="300">Course Title</th>
+        <th width="70">Mark</th>
+        <th width="70">ATT</th>
+        <th width="70">CMP</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each records}}
+
+      <tr>
+        <td style="padding: 0; width: 100%;" colspan="6">
+          <table style="width: 100%; break-inside: avoid; margin-top: 0; " class="inner-table">
+            <tbody>
+              <tr>
+                <td colspan="6" class="td-colspan">
+                  <strong> {{ this.termDescriptor }} {{ this.schoolYear }}</strong>
+                  <span>{{ this.nameOfInstitution }}</span>
+                </td>
+              </tr>
+              {{#each this.transcript}}
+              <tr>
+                <td width="40"></td>
+                <td width="70" style="padding-left:0">{{ this.courseCode }}</tdwidth="70">
+                <td width="300">{{ this.courseTitle }}</td>
+                <td width="70">{{ this.finalLetterGradeEarned }}</td>
+                <td width="70">{{ this.attemptedCredits }}</td>
+                <td width="70">{{ this.earnedCredits }}</td>
+              </tr>
+              {{/each}}
+              <tr>
+                <td colspan="6" class="td-colspan-bottom">
+                  <span>Credit Att: <span class="total">{{ this.ATT }}</span> <span class="line">|</span></span>
+                  <span>Cmp: <span class="total">{{ this.CMP }}</span><span class="line">|</span> </span>
+                  {{!-- <span>TGPA: <span class="total"></span></span> --}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

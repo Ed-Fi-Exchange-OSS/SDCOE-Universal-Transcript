@@ -1,0 +1,169 @@
+{
+  "studentTranscript": {
+    "resourceId": "",
+    "transcriptRunDate": "11/20/2020",
+    "studentUniqueId": "123456778",
+    "studentUniqueIdType": "SSIS",
+    "studentLocalId": 2093820931829,
+    "studentIdentificationSystemDescriptor": "uri://ed-fi.org/StudentIdentificationSystemDescriptor#Local",
+    "firstName": "Albert",
+    "lastSurname": "Weinstein",
+    "birthDate": "11/11/2011",
+    "demographics": [
+      {
+        "gender": "uri://ed-fi.org/SexDescriptor#Female",
+        "hispanicLatinoEthnicity": false,
+        "races": [
+          {
+            "raceDescriptor": "uri://ed-fi.org/RaceDescriptor#Asian"
+          }
+        ]
+      }
+    ],
+    "guardians": [
+      {
+        "relationToStudent": "uri://ed-fi.org/RelationDescriptor#Mother",
+        "livesWith": true,
+        "guardianId": "f50036f254234dd89d12bbfd1c855655",
+        "firstName": "Madelyn",
+        "lastSurname": "Woods",
+        "addresses": [
+          {
+            "addressType": "uri://ed-fi.org/AddressTypeDescriptor#Home",
+            "streetNumberName": "54 Rocky Clarendon Avenue",
+            "city": "Grand Bend",
+            "state": "uri://ed-fi.org/StateAbbreviationDescriptor#TX",
+            "postalCode": "78834",
+            "nameOfCounty": "WILLISTON"
+          }
+        ],
+        "telephones": [
+          {
+            "telephoneNumber": "(950) 943 8054",
+            "telephoneNumberType": "uri://ed-fi.org/TelephoneNumberTypeDescriptor#Emergency 2",
+            "orderOfPriority": 1
+          }
+        ]
+      }
+    ],
+    "studentAcademicRecords": [
+      {
+        "studentUniqueId": "CD333",
+        "gradeLevel": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade",
+        "studentCounselorName": "",
+        "educationOrganizationId": 255901107,
+        "schoolId": 2,
+        "nameOfInstitution": "Escon HS 2",
+        "districtResourceId": "922d768f6b3f4ed78ce77d13e44b505a",
+        "districtId": 255901,
+        "nameOfDistrict": "Grand Bend ISD",
+        "nameOfCounty": "Piedmont",
+        "nameOfState": "CA",
+        "schoolYear": 2012,
+        "termDescriptor": "uri://ed-fi.org/TermDescriptor#Fall Semester",
+        "cumulativeEarnedCredits": 7.0,
+        "courseTranscript": [
+          {
+            "attemptedCredits": 1.0,
+            "earnedCredits": 1.0,
+            "finalLetterGradeEarned": "D",
+            "finalNumericGradeEarned": 63.0,
+            "courseCode": "03100500",
+            "courseTitle": "Algebra I",
+            "academicSubject": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics",
+            "localCourseCode": "03100500",
+            "localCourseTitle": "English 01 PreAP",
+            "courseAttemptResult": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "methodCreditEarned": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "CourseNonacademic": "",
+            "CourseHonors": "",
+            "CourseCollegePrepCode": "",
+            "CourseRepeated": "",
+            "CourseCTE": "",
+            "CourseInstructor": "",
+            "CourseExitDate": ""
+          },
+          {
+            "attemptedCredits": 1.0,
+            "earnedCredits": 1.0,
+            "finalLetterGradeEarned": "A",
+            "finalNumericGradeEarned": 97.0,
+            "courseCode": "BIO",
+            "courseTitle": "Biology",
+            "academicSubject": "uri://ed-fi.org/AcademicSubjectDescriptor#Science",
+            "localCourseCode": "03100500",
+            "localCourseTitle": "English 01 PreAP",
+            "courseAttemptResult": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "methodCreditEarned": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "CourseNonacademic": "",
+            "CourseHonors": "",
+            "CourseCollegePrepCode": "",
+            "CourseRepeated": "",
+            "CourseCTE": "",
+            "CourseInstructor": "",
+            "CourseExitDate": ""
+          },
+          {
+            "attemptedCredits": 1.0,
+            "earnedCredits": 1.0,
+            "finalLetterGradeEarned": "B",
+            "finalNumericGradeEarned": 82.0,
+            "courseCode": "ENG-1",
+            "courseTitle": "English I",
+            "academicSubject": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts",
+            "localCourseCode": "03100500",
+            "localCourseTitle": "English 01 PreAP",
+            "courseAttemptResult": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "methodCreditEarned": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "CourseNonacademic": "",
+            "CourseHonors": "",
+            "CourseCollegePrepCode": "",
+            "CourseRepeated": "",
+            "CourseCTE": "",
+            "CourseInstructor": "",
+            "CourseExitDate": ""
+          }
+        ]
+      }
+    ],
+    "programs": [
+      {
+        "studentUniqueID": "CD333",
+        "institutionID": 1,
+        "nameOfInstitution": "Escon HS",
+        "schoolYear": "2020-2021",
+        "term": "uri://ed-fi.org/TermDescriptor#Spring Semester",
+        "gradeLevel": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade",
+        "programID": "RTOC",
+        "programTitle": "RTOC"
+      }
+    ],
+    "studentAssessments": [
+      {
+        "studentUniqueId": "CD333",
+        "institutionId": 1,
+        "nameOfInstitution": "Escon HS",
+        "date": "12/2/2009",
+        "testType": "Test | Award",
+        "testCode": "SAT",
+        "testName": "SAT test",
+        "testScore": "1020",
+        "schoolYear": "2020-2021",
+        "term": "uri://ed-fi.org/TermDescriptor#Spring Semester",
+        "gradeLevel": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+      }
+    ],
+    "awardsAchievements": [
+      {
+        "studentUniqueId": "CD333",
+        "institutionId": 1,
+        "nameOfInstitution": "Escon HS",
+        "schoolYear": "2020-2021",
+        "term": "uri://ed-fi.org/TermDescriptor#Spring Semester",
+        "gradeLevel": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade",
+        "awardCode": "HS",
+        "awardName": "High School Diploma"
+      }
+    ]
+  }
+}

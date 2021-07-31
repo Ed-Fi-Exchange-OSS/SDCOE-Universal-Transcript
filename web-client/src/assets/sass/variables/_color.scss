@@ -1,0 +1,51 @@
+// Default Color
+$white: #ffffff !default;
+$black: #000000 !default;
+
+// Base colors
+$primary-color: #005488 !default;
+$secondary-color: #0ab1f1 !default;
+$error-color: #f44336 !default;
+$success-color: #4caf50 !default;
+$warning-color: #ff9800 !default;
+$accent-color: #f0f6f8 !default;
+
+$bg-color: $white;
+$grey-1: #5a5a5a;
+$grey-2: #a9a9a9;
+$grey-3: #d8d8d8;
+$grey-4: #f5f5f5;
+$grey-light: #ededed;
+
+$input-placeholder-color: $grey-2;
+
+//Color Palette
+$colorMap: (
+  'white': (
+    'base': $white,
+  ),
+  'black': (
+    'base': $black,
+  ),
+  'primary': (
+    'base': $primary-color,
+    'dark': darken($primary-color, 10%),
+    'light': lighten($primary-color, 10%),
+  ),
+  'secondary': (
+    'base': $secondary-color,
+    'dark': darken($secondary-color, 10%),
+    'light': lighten($secondary-color, 10%),
+  ),
+);
+
+$component-color-variants: (
+  'primary': (
+    'bg-color': getColor('primary.base'),
+    'hover-color': getColor('primary.dark'),
+  ),
+  'secondary': (
+    'bg-color': getColor('secondary.base'),
+    'hover-color': getColor('secondary.dark'),
+  ),
+);

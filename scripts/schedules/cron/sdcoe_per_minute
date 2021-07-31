@@ -1,0 +1,3 @@
+* * * * * root /opt/sdcoe-transcript/scripts/schedules/process_approved_transcript.sh >> /var/log/sdcoe/cron/cron.log 2>&1
+
+* * * * * root /opt/sdcoe-transcript/scripts/schedules/close_chrome_process.sh >> /var/log/sdcoe/cron/chrome_process.log 2>&1

@@ -1,0 +1,75 @@
+{
+  "name": "web-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.0",
+    "husky": "^4.3.0",
+    "jwt-decode": "^3.1.2",
+    "lint-staged": "^10.4.2",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.13.1",
+    "query-string": "^6.13.8",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-modal": "^3.12.1",
+    "react-phone-number-input": "^3.1.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.4",
+    "react-select": "^3.1.0",
+    "react-table": "^7.6.2",
+    "react-toastify": "^6.1.0",
+    "vyaguta-icons": "^1.0.1"
+  },
+  "scripts": {
+    "dev:start": "react-scripts start",
+    "dev": "react-scripts start",
+    "secure:dev": "PORT=9080 HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build",
+    "scss": "node-sass --watch ./src/assets/sass -o ./src/assets/css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-leapfrog/react"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,css,scss,md}": [
+      "prettier . --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-leapfrog": "^3.0.0",
+    "prettier": "^2.1.2"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.4.1",
+    "yarn": ">= 1.20.0"
+  }
+}

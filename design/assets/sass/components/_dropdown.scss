@@ -1,0 +1,99 @@
+.dropdown {
+  position: relative;
+  display : inline-block;
+
+  .dropdown-menu {
+    min-width    : 166px;
+    background   : #FFFFFF;
+    box-shadow   : 0px 6px 28px 12px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding      : 8px 0;
+  }
+
+  .dropdown-item {
+    padding    : 12px 16px;
+    font-weight: 600;
+    font-size  : 14px;
+    line-height: 14px;
+    color      : $grey-1;
+    cursor     : pointer;
+    transition : .3s ease-in-out;
+
+    &.reject {
+      color: $error-color
+    }
+
+    &.no-option {
+      color      : $grey-2;
+      font-weight: 500;
+      text-align : center;
+      cursor     : default;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+}
+
+//custom dropdown for user-menu
+.user-menu {
+  display : inline-block;
+  position: relative;
+  z-index : 10;
+
+  @include e(button) {
+    cursor     : pointer;
+    line-height: 24px;
+
+    &:hover {
+      color: darken($color: $grey-1, $amount: 10);
+    }
+  }
+
+  @include e(menu-box) {
+    position          : absolute;
+    width             : 130px;
+    right             : 0;
+    background-color  : #fff;
+    border-radius     : 4px;
+    box-shadow        : 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    transition        : all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition   : all 0.3s;
+    -ms-transition    : all 0.3s;
+    -o-transition     : all 0.3s;
+    display           : none;
+    margin-top        : 5px;
+  }
+
+  @include e(menu) {
+    padding: 8px 0;
+  }
+
+  @include e(item) {
+    position   : relative;
+    font-weight: 600;
+    font-size  : 14px;
+    line-height: 14px;
+    padding    : 10px;
+    color      : $grey-1;
+    text-align : left;
+    cursor     : pointer;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+
+  @include m(active) {
+    .user-menu__menu-box {
+      display   : block;
+      margin-top: 15px;
+    }
+  }
+}

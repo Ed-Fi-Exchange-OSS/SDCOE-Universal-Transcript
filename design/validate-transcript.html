@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/sass/style.css">
+
+  <title>SDCOE</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="top-bar p-3 navbar-expand-sm">
+      <div class="left">
+        <a href="https://www.sdcoe.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer"
+          class="top-bar__logo navbar-brand">
+          <img src="assets/images/header-logo.svg" alt="SDCOE" />
+        </a>
+        <span>Data Hub</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/icons/menu.svg" alt="menu-btn">
+      </button>
+
+      <div class="top-bar__menu collapse navbar-collapse" id="navbarCollapse">
+        <ul class="top-bar__menu-item ml-auto">
+          <li class="mr-2"> 
+            <a href="mailto:communications@sdcoe.net">
+              <img src="assets/icons/help.svg" alt="help">
+              Help
+            </a>
+          </li>
+          <!-- only for  district council -->
+          <li class="user-menu ml-3 d-none" id="userMenu">
+            <div class="user-menu__button">
+              <img src="assets/icons/person.svg" alt="person">
+              Jhon Doe
+              <img src="assets/icons/drop-down.svg" alt="drop-down">
+            </div>
+            <div class="user-menu__menu-box">
+              <ul class="user-menu__menu">
+                <li class="user-menu__item">Logout</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar">
+      <span class="navbar__item d-none">
+        <a class="navbar__link" href="#">District Transcript Request</a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link" href="./studentTranscript.html">Student Transcript Request</span></a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link  navbar__link--active" href="./validate-transcript.html">Validate Transcript</a>
+      </span>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container pb-5">
+      <form class="form box-shadow" id="transcript-validation">
+        <div class="form-group">
+          <div class="form-group__label mb-2">Transcript file *</div>
+          <small class="form-text mt-0 mb-2">json & pdf file under 10 MB are accepeted</small>
+          <div class="custom-file" id="customFile">
+            <input type="file" class="custom-file-input" id="signatureFile" aria-describedby="fileHelp">
+            <label class="custom-file-label" for="signatureFile" data-browse="">
+              Select a file to upload 
+            </label>
+            <div class="file">
+              <span class="file-name"></span>
+              <a href="#" class="file-remove ml-2 d-none">Remove</a>
+            </div>
+          </div>
+          <small class="form-text-error"></small>
+        </div>
+        <button type="submit" class="btn btn--primary" id="check-validation">Check Validation</button>
+      </form>
+      <div class="box-shadow text-center">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="message__heading mt-4">Validating uploaded file... </p>
+      </div>
+      <div class="box-shadow verified text-center">
+        <img src="./assets/icons/check-shield.svg">
+        <div class="message">
+          <p class="message__heading">This transcipt has been verified as valid.</p>
+        </div>
+        <a class="btn btn--secondary" href="./validate-transcript.html">Upload & Validate Another</a>
+      </div>
+      <div class="box-shadow not-verified text-center">
+        <img src="./assets/icons/shield-x.svg">
+        <div class="message">
+          <p class="message__heading">This transcipt has been verified as invalid.</p>
+        </div>
+        <a class="btn btn--secondary" href="./validate-transcript.html">Upload & Validate Another</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top__info">
+        <img src="./assets/images/footer-logo.svg" alt="SDCOE" class="footer-top__logo" />
+        <div class="footer-top__text">
+          San Diego County Office of Education <br />
+          6401 Linda Vista Road <br />
+          San Diego, CA 92111-7319<br />
+          858-292-3500
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2020 San Diego County Office of Education All rights reserved
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Adds the name of the file that appears on select
+    $(".custom-file-input").on("change", function () {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html('');
+      $(this).siblings(".file").children(".file-name").html(fileName);
+      $(this).siblings(".file").children(".file-remove").removeClass('d-none');
+    });
+  </script>
+</body>
+
+</html>

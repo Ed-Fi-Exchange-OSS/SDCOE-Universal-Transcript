@@ -1,0 +1,67 @@
+<div class="student-info-section">
+  <div class="student-info small">
+    <div class="student-name">{{ firstName }} {{ lastSurname }}</div>
+    <table width="300">
+      <thead>
+      <tr>
+        <th width="100"></th>
+        <th width="200"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Student #:</td>
+        <td class="value">{{ studentLocalId }}</td>
+      </tr>
+      <tr>
+        <td>Sex:</td>
+        <td class="value">{{ gender }}</td>
+      </tr>
+      <tr>
+        <td>D.O.B:</td>
+        <td class="value">{{ birthDate }}</td>
+      </tr>
+      <tr>
+        <td>Perm ID #:</td>
+        <td class="value">{{ studentUniqueId }}</td>
+      </tr>
+<!--      Not required for the time being. Might need in future-->
+<!--      <tr>-->
+<!--        <td>Grade:</td>-->
+<!--        <td class="value"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Counselor:</td>-->
+<!--        <td class="value"></td>-->
+<!--      </tr>-->
+      </tbody>
+    </table>
+  </div>
+  <div class="parent-info small">
+    <div class="title">Parent/Guardian Info</div>
+    <table width="230">
+      <thead>
+      <tr>
+        <th width="80"></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Name: </td>
+        <td class="value">{{ guardian.firstName }} {{ guardian.lastSurname }}</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td class="value">
+          {{ guardian.streetNumberName }}, {{ guardian.city }}, {{ guardian.state }} {{ guardian.postalCode }}
+        </td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td class="value">{{ guardian.telephoneNumber }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

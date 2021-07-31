@@ -1,0 +1,44 @@
+.btn {
+  font-size    : 16px;
+  line-height  : 20px;
+  border-radius: 4px;
+  padding      : 12px 28px;
+  font-weight  : 600;
+  color        : $white;
+
+  @include m(primary) {
+    background-color: $secondary-color;
+    border-color    : $secondary-color;
+
+    &:hover {
+      color           : white;
+      background-color: getColor("secondary.dark");
+    }
+  }
+
+  @include m(secondary) {
+    background-color: transparent;
+    border          : 1px solid $secondary-color;
+    color           : $secondary-color;
+
+    &:hover {
+      color           : white;
+      background-color: getColor("secondary.dark");
+    }
+  }
+
+  @include m(action) {
+    padding: 2px 10px;
+
+    &:hover {
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.user-button{
+  padding: 0;
+  background-color: pink;
+}

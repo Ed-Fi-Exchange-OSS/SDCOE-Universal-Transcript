@@ -1,0 +1,49 @@
+definitions:
+  App:
+    title: App
+    type: object
+    properties:
+      app:
+        type: string
+      apiVersion:
+        type: string
+
+/:
+  get:
+    summary: Get API version
+    description: App version
+    produces:
+      - application/json
+    tags:
+      - Base
+    responses:
+      200:
+        description: Application and API version
+        schema:
+          title: Users
+          type: object
+          $ref: '#/definitions/App'
+
+/verify:
+  post:
+    tags:
+      - 'Verify transcript'
+    summary: 'Verify Transcript'
+    description: 'The endpoint allows user to upload a transcript and verify it.'
+    operationId: 'Verify Transcript'
+    consumes:
+      - 'application/pdf'
+      - 'application/json'
+    produces:
+      - 'application/xml'
+      - 'application/json'
+    parameters:
+      - in: 'body'
+        name: 'transcript-pdf'
+        description: 'Transcript Order must be added'
+        required: true
+    responses:
+      '200':
+        description: 'Order placed successfully'
+      '400':
+        description: 'Invalid Transcript'

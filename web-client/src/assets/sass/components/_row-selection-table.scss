@@ -1,0 +1,27 @@
+.rowSelection-table {
+  @include e(col) {
+    padding: getSpacing('4x');
+    color: $grey-1;
+    @include m(head) {
+      font-weight: 800;
+    }
+  }
+
+  @include e(body-row) {
+    box-shadow: 0px 2px 0px $grey-light;
+    border: 0;
+    &:hover {
+      background-color: $accent-color;
+      cursor: pointer;
+    }
+
+    @include m(active) {
+      background-color: $accent-color;
+    }
+
+    @include m(disabled) {
+      background-color: $grey-4;
+      pointer-events: none;
+    }
+  }
+}

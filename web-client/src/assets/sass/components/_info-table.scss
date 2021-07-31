@@ -1,0 +1,19 @@
+.info-table {
+  width: 100%;
+  min-width: 100%;
+
+  tbody {
+    tr {
+      border-bottom: 0;
+    }
+  }
+  td {
+    color: $grey-1;
+    padding-left: 0;
+    line-height: 16px;
+    &:first-child {
+      font-weight: 600;
+      color: $grey-2;
+    }
+  }
+}

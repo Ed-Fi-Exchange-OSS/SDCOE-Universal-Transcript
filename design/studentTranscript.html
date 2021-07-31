@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- Chosen select css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css"
+    integrity="sha512-yVvxUQV0QESBt1SyZbNJMAwyKvFTLMyXSyBHDO4BG5t7k/Lw34tyqlSDlKIrIENIzCl+RVUNjmCPG+V/GMesRw=="
+    crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/sass/style.css">
+
+  <title>SDCOE</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="top-bar p-3 navbar-expand-sm">
+      <div class="left">
+        <a href="https://www.sdcoe.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer"
+          class="top-bar__logo navbar-brand">
+          <img src="assets/images/header-logo.svg" alt="SDCOE" />
+        </a>
+        <span>Data Hub</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/icons/menu.svg" alt="menu-btn">
+      </button>
+
+      <div class="top-bar__menu collapse navbar-collapse" id="navbarCollapse">
+        <ul class="top-bar__menu-item ml-auto">
+          <li class="mr-2"> 
+            <a href="mailto:communications@sdcoe.net">
+              <img src="assets/icons/help.svg" alt="help">
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar" data-spy="affix" data-offset-top="197">
+      <span class="navbar__item d-none">
+        <a class="navbar__link" href="#">District Transcript Request</a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link navbar__link--active" href="./studentTranscript.html">Student Transcript Request</a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link" href="./validate-transcript.html">Validate Transcript</a>
+      </span>
+    </nav>
+  </header>
+
+  <section class="section student-trascript-section">
+    <div class="container my-sm-5">
+      <form class="form student-transcript-form box-shadow" id="student-transcript-form">
+        <div class="form-group form-group--required">
+          <label for="transcriptType" class="form-group__label">Type of Transcript </label>
+          <select class="form-control form-control--select" id="transcriptType" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option value="rop">ROP PDF</option>
+            <option value="standard">Standard PDF</option>
+          </select>
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="studentName" class="form-group__label">Student Name</label>
+          <input type="text" class="form-control" id="studentName" placeholder="For eg: John Doe">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="maidenName" class="form-group__label">Other Name (Maiden Name)</label>
+          <input type="text" class="form-control" id="maidenName">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group form-group--required">
+              <label for="dob" class="form-group__label">DOB</label>
+              <input type="date" class="form-control" id="dob" required>
+              <small class="form-text-error"></small>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group form-group--required">
+              <label for="phone" class="form-group__label">Phone</label>
+              <input type="number" class="form-control" id="phone" placeholder="000-000-000">
+              <small class="form-text-error"></small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="address" class="form-group__label">Address</label>
+          <textarea class="form-control" id="address" rows="4"></textarea>
+          <small class="form-text-error"></small>
+        </div>
+        <!-- only show when transcript type is ROP -->
+        <div class="form-group form-group--required" id="industrySelectGroup" style="display: none;">
+          <label for="industry-select" class="form-group__label">Industry Sectors</label>
+          <select class="form-control chosen-multi-select" id="industry-select" multiple="true"
+            data-placeholder="Search or select from the list multiple industry sectors ">
+            <option value="computer">Computer </option>
+            <option value="arts">Arts, Entertainment and Recreation </option>
+            <option value="telecommunication ">Telecommunication </option>
+            <option value="transportation ">Transportation </option>
+            <option value="manufacturing  ">Manufacturing </option>
+          </select>
+          <small class="form-text-error"></small>
+        </div>
+
+        <div class="form-group form-group--required">
+          <label for="classesDesc" class="form-group__label">Classes Description</label>
+          <textarea class="form-control" id="classesDesc" rows="4"></textarea>
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="yearAttended" class="form-group__label">Year(s) Attended</label>
+          <input type="text" class="form-control" id="yearAttended" placeholder="For eg: 2001, 2002">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="districtName" class="form-group__label">District Name</label>
+          <select class="form-control form-control--select" id="districtName" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Mississippi</option>
+            <option>New York</option>
+          </select>
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="releaseName" class="form-group__label">Release to Name</label>
+          <input type="text" class="form-control" id="releaseName" placeholder="For eg: John Doe">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="releaseEmail" class="form-group__label">Release to Email</label>
+          <input type="email" class="form-control" id="releaseEmail" placeholder="For eg: john@example.com">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group">
+          <div class="form-group__label mb-2">Signature File Upload *</div>
+          <small class="form-text mt-0 mb-2">jpg, png & pdf file under 3 MB are accepeted</small>
+          <div class="custom-file" id="customFile">
+            <input type="file" class="custom-file-input" id="signatureFile" aria-describedby="fileHelp">
+            <label class="custom-file-label" for="signatureFile" data-browse="">
+              Select a file to upload
+            </label>
+          </div>
+          <small class="form-text-error"></small>
+        </div>
+        <button type="submit" class="btn btn--primary" id="request">Request Certificate</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top__info">
+        <img src="./assets/images/footer-logo.svg" alt="SDCOE" class="footer-top__logo" />
+        <div class="footer-top__text">
+          San Diego County Office of Education <br />
+          6401 Linda Vista Road <br />
+          San Diego, CA 92111-7319<br />
+          858-292-3500
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2020 San Diego County Office of Education All rights reserved
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="js/valid.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <!-- Chosen select JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"
+    integrity="sha512-rMGGF4wg1R73ehtnxXBt5mbUfN9JUJwbk21KMlnLZDJh7BkPmeovBuddZCENJddHYYMkCh9hPFnPmS9sspki8g=="
+    crossorigin="anonymous"></script>
+
+  <script>
+    //show/hide indusrty select group based on transcript type.
+    $(function () {
+        $("#transcriptType").change(function () {
+            if ($(this).val() == "rop") {
+                $("#industrySelectGroup").show();
+            } else {
+                $("#industrySelectGroup").hide();
+            }
+        });
+    });
+
+    // For multi-select
+    $(document).ready(function () {
+      $(".chosen-multi-select").chosen({
+        placeholder_text_single: "Select Project/Initiative..."
+      });
+    });
+
+    // Adds the name of the file that appears on select
+    $(".custom-file-input").on("change", function () {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+  </script>
+</body>
+
+</html>

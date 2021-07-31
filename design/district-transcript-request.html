@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/sass/style.css">
+
+  <title>SDCOE</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="top-bar p-3 navbar-expand-sm">
+      <div class="left">
+        <a href="https://www.sdcoe.net/Pages/Home.aspx" target="_blank" rel="noopener noreferrer"
+          class="top-bar__logo navbar-brand">
+          <img src="assets/images/header-logo.svg" alt="SDCOE" />
+        </a>
+        <span>Data Hub</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/icons/menu.svg" alt="menu-btn">
+      </button>
+
+      <div class="top-bar__menu collapse navbar-collapse" id="navbarCollapse">
+        <ul class="top-bar__menu-item ml-auto">
+          <li class="mr-2">
+            <a href="mailto:communications@sdcoe.net">
+              <img src="assets/icons/help.svg" alt="help">
+              Help
+            </a>
+          </li>
+          <li class="user-menu ml-3" id="userMenu">
+            <div class="user-menu__button">
+              <img src="assets/icons/person.svg" alt="person">
+              Jhon Doe
+              <img src="assets/icons/drop-down.svg" alt="drop-down">
+            </div>
+            <div class="user-menu__menu-box">
+              <ul class="user-menu__menu">
+                <li class="user-menu__item">Logout</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar">
+      <span class="navbar__item">
+        <a class="navbar__link" href="./requested-transcript.html">Requested Transcript</a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link navbar__link--active" href="./district-transcript-request.html">District Transcript
+          Request</span></a>
+      </span>
+      <span class="navbar__item">
+        <a class="navbar__link" href="./validate-transcript.html">Validate Transcript</a>
+      </span>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container my-5">
+      <form class="form district-transcript-form box-shadow" id="district-transcript-form">
+        <div class="form-group form-group--required">
+          <label for="transcriptType" class="form-group__label">Type of Transcript </label>
+          <select class="form-control form-control--select" id="transcriptType" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option>ROP PDF</option>
+            <option>Standard PDF</option>
+            <option>JSON2</option>
+            <option>CLR</option>
+          </select>
+          <small class="form-text-error"></small>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group form-group--required">
+              <label for="studentSSID" class="form-group__label">District Student SSID</label>
+              <input type="text" class="form-control" id="studentSSID" placeholder="For eg: 12345">
+              <small class="form-text-error"></small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="studentName" class="form-group__label">Student Name</label>
+          <input type="text" class="form-control" id="studentName" placeholder="For eg: John Doe">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="maidenName" class="form-group__label">Other Name (Maiden Name)</label>
+          <input type="text" class="form-control" id="maidenName">
+          <small class="form-text-error"></small>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group form-group--required">
+              <label for="dob" class="form-group__label">DOB</label>
+              <input type="date" class="form-control" id="dob" required>
+              <small class="form-text-error"></small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-group--required">
+          <label for="districtName" class="form-group__label">District Name</label>
+          <select class="form-control form-control--select" id="districtName" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Mississippi</option>
+            <option>New York</option>
+          </select>
+          <small class="form-text-error"></small>
+        </div>
+        <button type="submit" class="btn btn--primary" id="request">Request Certificate</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-top__info">
+        <img src="./assets/images/footer-logo.svg" alt="SDCOE" class="footer-top__logo" />
+        <div class="footer-top__text">
+          San Diego County Office of Education <br />
+          6401 Linda Vista Road <br />
+          San Diego, CA 92111-7319<br />
+          858-292-3500
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2020 San Diego County Office of Education All rights reserved
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/user-menu.js"></script>
+</body>
+
+</html>
