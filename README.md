@@ -13,14 +13,6 @@ facilitate the backend work of these front facing packages.
 
 The headings below describe each of the packages in brief:
 
-
-## [Design](design/README.md)
-
-This folder contains the main design elements
-that have been used for the SDCOE front end.
-
-> Contains static HTML, CSS, JS, Images, Fonts 
-
 ## [Docs](docs/README.md)
 
 This folder is the main documentation module
