@@ -1,0 +1,103 @@
+.btn {
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 12px 28px;
+  font-weight: 600;
+  color: $white;
+
+  @include m(primary) {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+      color: white;
+      background-color: getColor('secondary.dark');
+    }
+  }
+
+  @include m(primary-disabled) {
+    background-color: $grey-2;
+    color: $grey-3;
+    pointer-events: none;
+  }
+
+  @include m(secondary) {
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+
+    &:hover {
+      color: white;
+      background-color: getColor('secondary.dark');
+    }
+  }
+
+  @include m(secondary-disabled) {
+    color: $grey-3;
+    background-color: $white;
+    border: 1px solid $grey-2;
+    pointer-events: none;
+  }
+
+  @include m(secondary-dark) {
+    background-color: $grey-1;
+    color: $white;
+    &:hover,
+    &:active {
+      color: $white;
+      background-color: transparentize($grey-1, 0.3);
+    }
+  }
+
+  @include m(action) {
+    padding: 2px 10px;
+
+    &:hover {
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  @include m(md) {
+    padding: 6px 14px;
+  }
+
+  @include m(disabled) {
+    color: $grey-3;
+    border-color: $grey-3;
+    background-color: $grey-2;
+    font-weight: getFontWeight('semibold');
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $grey-1;
+    }
+  }
+
+  @include m(link) {
+    background-color: transparent;
+    color: $secondary-color;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      color: transparentize($color: $secondary-color, $amount: 0.1);
+    }
+    &:active,
+    :focus {
+      outline: none;
+    }
+  }
+
+  @include m(block) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.user-button {
+  padding: 0;
+  background-color: pink;
+}

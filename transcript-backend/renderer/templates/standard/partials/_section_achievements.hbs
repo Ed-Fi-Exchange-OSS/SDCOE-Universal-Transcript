@@ -1,0 +1,25 @@
+<div class="achievements-section small frame">
+  <h2 style="margin-bottom: 9pt">Tests and Achievements</h2>
+  <table width="700">
+    <thead>
+      <tr>
+        <th width="110">Date</th>
+        <th width="490">Test Taken</th>
+        <th width="100">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each records}}
+
+      <tr>
+        <td>{{ this.monthOfAward }}/{{ this.yearOfAward }}</td>
+        <td>{{ this.code }}:{{ this.title }}</td>
+        <td>{{ this.score }}</td>
+      </tr>
+
+      {{/each}}
+    </tbody>
+
+
+  </table>
+</div>

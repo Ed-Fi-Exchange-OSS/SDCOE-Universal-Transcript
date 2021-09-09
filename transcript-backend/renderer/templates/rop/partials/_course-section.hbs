@@ -1,0 +1,27 @@
+<div class="course-section">
+  {{#each this.courses}}
+  <table width="100%">
+    <thead>
+      <tr>
+        <th width="250">Course Section: <span>{{courseCode}}</span></th>
+        <th></th>
+        <th width="250"></th>
+        <th></th>
+        <th>Course Hours:</th>
+        <th width="62">{{sectionHours}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each coursesInfo}}
+      <tr>
+        <td colspan="2">Title: <span>{{courseTitle}}</span></td>
+        <td></td>
+        <td></td>
+        <td>Hours:</td>
+        <td>{{earnedCredits}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{/each}}
+</div>

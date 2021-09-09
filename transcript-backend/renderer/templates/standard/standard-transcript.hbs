@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> _head }}
+
+<body>
+  <div class="container">
+    {{> _header transcript.header}}
+
+    <div class="main-section">
+      {{> _section_student_info transcript.studentInfo}}
+      {{> _section_table transcript.tableOfScores}}
+      {{> _section_course_tag }}
+
+      <!--      Weighted and Non Weighed GPA section does not need to be included-->
+      <!--      \{{> _section_gpa_weight }}-->
+
+      {{!-- <div class="page-break"></div> --}}
+
+      {{> _section_achievements transcript.achievements }}
+      {{> _section_credit_summary transcript.creditSummary}}
+
+    </div>
+
+    {{> _footer transcript.footer }}
+  </div>
+</body>
+
+</html>

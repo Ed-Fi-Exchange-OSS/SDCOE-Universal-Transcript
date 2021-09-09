@@ -1,0 +1,127 @@
+.sdcoe-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  min-width: 646px;
+  width: 80%;
+  border-radius: getSpacing('1x');
+  border: 0;
+  outline: none;
+  max-height: 646px;
+  max-width: 1000px;
+
+  @include e(overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparentize($black, 0.7);
+    z-index: 99;
+  }
+
+  @include e(header) {
+    padding: getSpacing('6x');
+    width: 100%;
+    border-bottom: 2px solid $grey-light;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @include e(title) {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 4px 0;
+    color: $grey-1;
+  }
+
+  @include e(description) {
+    font-size: 14px;
+    color: $grey-1;
+    margin-bottom: 0;
+  }
+
+  @include e(close) {
+    width: 28px;
+    height: 28px;
+    color: $grey-1;
+    cursor: pointer;
+  }
+
+  @include e(body) {
+    width: 100%;
+    padding: 0 getSpacing('6x');
+    display: flex;
+    max-height: 437px;
+
+    @include mqmax(md) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include e(subtitle) {
+    font-weight: 800;
+    font-size: 14px;
+    color: $grey-1;
+  }
+
+  @include e(sidebar-info) {
+    width: 38%;
+    padding-top: getSpacing('6x');
+    border-right: 1px solid $grey-light;
+    max-width: 374px;
+    overflow: auto;
+    @include mqmax(md) {
+      width: 100%;
+    }
+  }
+
+  @include e(table-wrapper) {
+    min-width: 62%;
+    overflow: auto;
+    table {
+      min-width: 100%;
+    }
+    @include mqmax(md) {
+      width: 100%;
+    }
+
+    & .lds-spinner {
+      position: absolute;
+      top: 50%;
+      left: 64%;
+      transform: translate(-64%, -50%);
+    }
+  }
+
+  @include e(footer) {
+    padding: getSpacing('4x') getSpacing('6x') getSpacing('6x');
+    border-top: 2px solid $grey-light;
+  }
+
+  @include e(footer-btn-wrapper) {
+    display: flex;
+    justify-content: flex-end;
+
+    & .btn:first-child {
+      margin-right: 16px;
+    }
+  }
+
+  @include e(confirmation) {
+    width: 380px;
+    min-width: 0;
+    & .sdcoe-modal__header {
+      border-bottom: 0;
+    }
+
+    & .sdcoe-modal__footer {
+      border-top: 0;
+    }
+  }
+}

@@ -1,0 +1,322 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tbody {
+    break-inside: avoid;
+  }
+
+  body {
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    background-color: #ffffff;
+    line-height: 1.3;
+    color: #595959;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 15pt;
+    line-height: 12pt;
+    color: black;
+    margin-bottom: 4.5pt;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 9.75pt;
+    line-height: 10.5pt;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 9pt;
+  }
+
+  .container {
+    width: 459pt;
+    display: block;
+    margin: 0 auto;
+    padding: 18pt;
+  }
+
+  .body1 {
+    /* 12px */
+    font-size: 9pt;
+    line-height: 9pt;
+  }
+
+  .body2 {
+    /* 11px */
+    font-size: 8.25pt;
+    line-height: 8.25pt;
+  }
+
+  .small {
+    /* 10px */
+    font-size: 7.5pt;
+    line-height: 7.5pt;
+  }
+
+  .black {
+    color: black;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  .frame {
+    border: 0.75pt solid #D8D8D8;
+    padding: 9pt 0pt;
+    margin-bottom: 12pt;
+    page-break-after: auto;
+    break-inside: avoid;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.75pt solid #D8D8D8;
+    padding-bottom: 15.75pt;
+    margin-bottom: 12pt;
+  }
+
+  .header__address {
+    width: 166.5pt;
+    line-height: 10.5pt;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 10.5pt;
+    line-height: 12.75pt;
+    color: #000000;
+  }
+
+  .value {
+    color: black;
+    margin-left: 30pt;
+  }
+
+  .student-info-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .student-info-section td {
+    padding: 2.25pt 0;
+    vertical-align: baseline;
+    font-weight: 600;
+  }
+
+  .student-name {
+    font-weight: 800;
+    font-size: 10.5pt;
+    line-height: 12.75pt;
+    color: #000000;
+    margin-bottom: 10.75pt;
+  }
+
+  .parent-info {
+    margin-right: 37.5pt;
+  }
+
+  .parent-info .title {
+    margin-top: 4.5pt;
+    margin-bottom: 10.5pt;
+    font-weight: 600;
+    font-size: 9pt;
+    line-height: 9pt;
+    text-transform: uppercase;
+  }
+
+  .table-section thead {
+    font-weight: 800;
+    font-size: 7.5pt;
+    line-height: 9pt;
+    text-transform: uppercase;
+    color: #6A6A6A;
+  }
+
+  .table-section thead tr {
+    height: 16.5pt;
+    background: #DFDFDF
+  }
+
+  .table-section table {
+    position: relative;
+    border: 0.75pt solid #D8D8D8;
+    font-size: 7.5pt;
+    line-height: 7.5pt;
+    margin-top: 14.25pt;
+  }
+
+  .table-section table .inner-table {
+    border: 0;
+    border-bottom: 0.2pt solid #D8D8D8;
+  }
+
+  .table-section td:not([colspan='6']),
+  .table-section th {
+    padding: 4.5pt 6pt
+  }
+
+  .table-section table tr td:first-child:not([colspan='6']) {
+    padding-left: 12.5pt;
+  }
+
+  .td-colspan {
+    line-height: 9pt;
+    padding: 6pt;
+    background: #F4F4F4;
+  }
+
+  .td-colspan strong {
+    color: black;
+    margin-right: 2pt;
+  }
+
+  .td-colspan-bottom {
+    text-align: center;
+    padding: 9pt 4.5pt 6.75pt;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .td-colspan-bottom .line {
+    color: #e0e0e0;
+    margin: 0pt 6pt;
+  }
+
+  .plus {
+    position: absolute;
+    left: 4.5pt;
+  }
+
+  .course-tag {
+    text-align: center;
+    padding: 4.5pt;
+    margin-top: 12pt;
+    margin-bottom: 12pt;
+  }
+
+  .gpa-weight-section table td:nth-child(1) {
+    text-align: right;
+    padding-right: 37.5pt;
+  }
+
+  .gpa-weight-section table td:nth-child(2),
+  .gpa-weight-section table td:nth-child(3) {
+    font-weight: bold;
+  }
+
+  .gpa-weight-section tbody.credit-section {
+    border-top: 6pt solid transparent;
+  }
+
+  .gpa-weight-section td,
+  .achievements-section td,
+  .credit-summary-section td {
+    line-height: 12pt;
+  }
+
+  .gpa-weight-section th {
+    font-weight: normal;
+    padding-bottom: 4.5pt;
+  }
+
+  .achievements-section table,
+  .credit-summary-section table {
+    margin-left: 15pt;
+  }
+
+  .achievements-section th,
+  .credit-summary-section th {
+    font-size: 8.25pt;
+    line-height: 10.5pt;
+  }
+
+  .achievements-section tbody {
+    border-top: 3pt solid transparent;
+  }
+
+  .achievements-section table td:nth-child(3),
+  .achievements-section table th:nth-child(3) {
+    text-align: right;
+  }
+
+  .achievements-section table td:nth-child(3) {
+    padding-right: 5.25pt;
+  }
+
+  .credit-summary-section table td:not(:nth-child(1)),
+  .credit-summary-section table th:not(:nth-child(1)) {
+    text-align: right;
+  }
+
+  .credit-summary-section tbody {
+    border-top: 9pt solid transparent;
+  }
+
+  .credit-summary-section tfoot {
+    font-weight: bold;
+  }
+
+  .footer {
+    font-weight: 500;
+    font-size: 9pt;
+    line-height: 9pt;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .right {
+    font-weight: bold;
+  }
+
+  @page {
+    size: 8.5in 11.0in;
+    margin-left: 0.15in;
+    margin-right: 0.15in;
+  }
+
+  .page-break {
+    display: none;
+  }
+
+  @media print {
+
+    html,
+    body,
+    .container {
+      width: 215.9mm;
+      height: 279.4mm;
+    }
+
+    .container {
+      padding-top: 0;
+    }
+
+    .page-break {
+      display: block;
+      page-break-after: always;
+    }
+  }
+</style>

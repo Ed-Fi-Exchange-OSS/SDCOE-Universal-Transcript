@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> _head}}
+
+<body>
+  <div class="container">
+    <div class="rop-transcript-section">
+      {{> _header this.transcript}}
+      <div class="main-section-transcript">
+        {{> _student-section this.transcript.studentInfo}}
+        {{> _course-section this.transcript.courses}}
+        {{> _transcript-footer this.transcript.courses}}
+      </div>
+    </div>
+    {{#each this.certificate}}
+    <div class="rop-certificate-section">
+      <div class="border border--blue">
+        <div class="border border--red">
+          <div class="certificate-container">
+            <img src="{{ropSticker}}" alt="rop-certificate" class="certificate-sticker certificate-sticker-1" />
+            {{> _main_section this }}
+            <img src="{{associateSticker}}" alt="rop-certificate" class="certificate-sticker certificate-sticker-2" />
+          </div>
+          {{> _footer}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</body>
+
+</html>

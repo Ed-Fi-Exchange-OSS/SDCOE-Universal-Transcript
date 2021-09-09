@@ -1,0 +1,307 @@
+[
+  {
+    "resourceId": "a46168c9fb094172a23fdb9ab2ce9177",
+    "studentUniqueId": "604821",
+    "firstName": "Tyrone",
+    "lastSurname": "Dyer",
+    "birthDate": "2003-11-13T00:00:00",
+    "enrollment": [
+      {
+        "entryDate": "2010-08-23T00:00:00",
+        "entryGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "schoolId": 255901107,
+        "nameOfInstitution": "Grand Bend Elementary School",
+        "graduationPlan": {
+          "graduationPlanTypeDescriptor": "uri://ed-fi.org/GraduationPlanTypeDescriptor#Minimum",
+          "graduationSchoolYear": 2011,
+          "totalRequiredCredits": 26,
+          "graduationPlanCreditsBySubject": [],
+          "graduationPlanCreditsByCourse": [],
+          "graduationPlanRequiredAssessment": []
+        }
+      }
+    ],
+    "sections": [
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "ART-03",
+        "sectionIdentifier": "25590110706Trad505ART0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "ART-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207240",
+            "firstName": "Amie",
+            "lastSurname": "Knapp"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "ELA-03",
+        "sectionIdentifier": "25590110701Trad201ELA0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "ELA-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "MATH-03",
+        "sectionIdentifier": "25590110702Trad201MATH0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "MATH-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "MUS-03",
+        "sectionIdentifier": "25590110706Trad502MUS0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "MUS-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207243",
+            "firstName": "Marjorie",
+            "lastSurname": "Hinton"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "PE-03",
+        "sectionIdentifier": "25590110705TradGYMEPE0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "PE-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207245",
+            "firstName": "Kerri",
+            "lastSurname": "Stokes"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "SCI-03",
+        "sectionIdentifier": "25590110704Trad201SCI0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "SCI-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2010-08-23T00:00:00",
+        "endDate": "2010-12-17T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "SS-03",
+        "sectionIdentifier": "25590110707Trad201SS0312011",
+        "sessionName": "2010-2011 Fall Semester",
+        "courseCode": "SS-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2010-08-23T00:00:00",
+            "endDate": "2010-12-17T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "ART-03",
+        "sectionIdentifier": "25590110706Trad505ART0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "ART-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207240",
+            "firstName": "Amie",
+            "lastSurname": "Knapp"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "ELA-03",
+        "sectionIdentifier": "25590110701Trad201ELA0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "ELA-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "MATH-03",
+        "sectionIdentifier": "25590110702Trad201MATH0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "MATH-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "MUS-03",
+        "sectionIdentifier": "25590110706Trad502MUS0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "MUS-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207243",
+            "firstName": "Marjorie",
+            "lastSurname": "Hinton"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "PE-03",
+        "sectionIdentifier": "25590110705TradGYMEPE0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "PE-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207245",
+            "firstName": "Kerri",
+            "lastSurname": "Stokes"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "SCI-03",
+        "sectionIdentifier": "25590110704Trad201SCI0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "SCI-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      },
+      {
+        "beginDate": "2011-01-04T00:00:00",
+        "endDate": "2011-05-27T00:00:00",
+        "schoolId": 255901107,
+        "schoolYear": 2011,
+        "localCourseCode": "SS-03",
+        "sectionIdentifier": "25590110707Trad201SS0322011",
+        "sessionName": "2010-2011 Spring Semester",
+        "courseCode": "SS-03",
+        "staff": [
+          {
+            "classroomPositionDescriptor": "uri://ed-fi.org/ClassroomPositionDescriptor#Teacher of Record",
+            "beginDate": "2011-01-04T00:00:00",
+            "endDate": "2011-05-27T00:00:00",
+            "staffUniqueId": "207227",
+            "firstName": "Debra",
+            "lastSurname": "Rocha"
+          }
+        ]
+      }
+    ]
+  }
+]

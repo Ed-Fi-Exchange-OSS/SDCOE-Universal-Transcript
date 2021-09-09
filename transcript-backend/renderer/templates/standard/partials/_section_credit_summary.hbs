@@ -1,0 +1,27 @@
+<div class="credit-summary-section small frame">
+  <h2>Credit Summary</h2>
+  <table width="700">
+    <thead>
+    <tr>
+      <th>Subject Area</th>
+      <th>Completed</th>
+    </tr>
+    </thead>
+    <tbody>
+
+      {{#each summary.subjects}}
+      <tr>
+        <td>{{@key}}</td>
+        <td>{{this}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+
+    <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>{{ summary.total }}</td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

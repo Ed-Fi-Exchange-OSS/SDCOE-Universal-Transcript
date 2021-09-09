@@ -1,0 +1,600 @@
+[
+  {
+    "resourceId": "a46168c9fb094172a23fdb9ab2ce9177",
+    "studentUniqueId": "604821",
+    "firstName": "Tyrone",
+    "lastSurname": "Dyer",
+    "birthDate": "2003-11-13T00:00:00",
+    "birthSexDescriptor": "#Female",
+    "demographics": [
+      {
+        "gender": "uri://ed-fi.org/SexDescriptor#Male",
+        "hispanicLatinoEthnicity": false,
+        "oldEthnicityDescriptor": "uri://ed-fi.org/OldEthnicityDescriptor#Black, Not Of Hispanic Origin",
+        "educationOrganizationId": 255901,
+        "educationOrganizationType": "edfi.LocalEducationAgency",
+        "races": [
+          {
+            "raceDescriptor": "uri://ed-fi.org/RaceDescriptor#White"
+          }
+        ]
+      }
+    ],
+    "alternateIds": [
+      {
+        "educationOrganizationId": 255901,
+        "educationOrganizationType": "edfi.LocalEducationAgency",
+        "alternateIdentificationCodes": [
+          {
+            "assigningOrganizationIdentificationCode": "Local",
+            "studentIdentificationSystemDescriptor": "uri://ed-fi.org/StudentIdentificationSystemDescriptor#Local",
+            "identificationCode": "821"
+          },
+          {
+            "assigningOrganizationIdentificationCode": "SSN",
+            "studentIdentificationSystemDescriptor": "uri://ed-fi.org/StudentIdentificationSystemDescriptor#SSN",
+            "identificationCode": "1304682336"
+          }
+        ]
+      }
+    ],
+    "guardians": [
+      {
+        "relationDescriptor": "uri://ed-fi.org/RelationDescriptor#Mother",
+        "livesWith": true,
+        "id": "eb30ddf1e0764bd4b6047f8d71481b29",
+        "firstName": "Carmen",
+        "lastSurname": "Dyer",
+        "addresses": [
+          {
+            "addressTypeDescriptor": "uri://ed-fi.org/AddressTypeDescriptor#Home",
+            "streetNumberName": "263 New Street",
+            "city": "Grand Bend",
+            "stateAbbreviationDescriptor": "uri://ed-fi.org/StateAbbreviationDescriptor#TX",
+            "postalCode": "78834",
+            "nameOfCounty": "WILLISTON"
+          }
+        ],
+        "telephones": [
+          {
+            "telephoneNumber": "(950) 342 7522",
+            "telephoneNumberTypeDescriptor": "uri://ed-fi.org/TelephoneNumberTypeDescriptor#Other",
+            "orderOfPriority": 1
+          }
+        ]
+      },
+      {
+        "relationDescriptor": "uri://ed-fi.org/RelationDescriptor#Father",
+        "livesWith": true,
+        "id": "f2243e6cb10947c1bc4f4d2c58bd03db",
+        "firstName": "Manuel",
+        "lastSurname": "Dyer",
+        "addresses": [
+          {
+            "addressTypeDescriptor": "uri://ed-fi.org/AddressTypeDescriptor#Home",
+            "streetNumberName": "263 New Street",
+            "city": "Grand Bend",
+            "stateAbbreviationDescriptor": "uri://ed-fi.org/StateAbbreviationDescriptor#TX",
+            "postalCode": "78834",
+            "nameOfCounty": "WILLISTON"
+          }
+        ],
+        "telephones": [
+          {
+            "telephoneNumber": "(950) 978 3450",
+            "telephoneNumberTypeDescriptor": "uri://ed-fi.org/TelephoneNumberTypeDescriptor#Fax",
+            "orderOfPriority": 1
+          }
+        ]
+      }
+    ],
+    "academicRecord": [
+      {
+        "schoolYear": 2012,
+        "termDescriptor": "uri://ed-fi.org/TermDescriptor#Fall Semester",
+        "cumulativeEarnedCredits": 7,
+        "educationOrganizationId": 255901107,
+        "educationOrganizationType": "edfi.School",
+        "diplomas": [
+          {
+            "diplomaAwardDate": "2012-08-30T00:00:00",
+            "diplomaTypeDescriptor": "uri://ed-fi.org/DiplomaTypeDescriptor#Regular diploma",
+            "achievementTitle": "Distingueshed",
+            "achievementCategoryDescriptor": "uri://ed-fi.org/AchievementCategoryDescriptor#Academic Honor"
+          }
+        ],
+        "academicHonor": [
+          {
+            "academicHonorCategoryDescriptor": "uri://ed-fi.org/AcademicHonorCategoryDescriptor#Honor award",
+            "honorDescription": "Academic Award",
+            "achievementTitle": "Distingueshed",
+            "achievementCategoryDescriptor": "uri://ed-fi.org/AchievementCategoryDescriptor#Academic Honor"
+          }
+        ],
+        "transcript": [
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Fail",
+            "attemptedCredits": 1,
+            "earnedCredits": 0.5,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "F",
+            "finalNumericGradeEarned": 50,
+            "courseCode": "ART-03",
+            "courseTitle": "Art, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "ART-03"
+              },
+              {
+                "localCourseCode": "ART-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "D",
+            "finalNumericGradeEarned": 60,
+            "courseCode": "ELA-03",
+            "courseTitle": "English Language Arts, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "ELA-03"
+              },
+              {
+                "localCourseCode": "ELA-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "C",
+            "finalNumericGradeEarned": 76,
+            "courseCode": "MATH-03",
+            "courseTitle": "Mathematics, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "MATH-03"
+              },
+              {
+                "localCourseCode": "MATH-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "D",
+            "finalNumericGradeEarned": 66,
+            "courseCode": "MUS-03",
+            "courseTitle": "Music, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "MUS-03"
+              },
+              {
+                "localCourseCode": "MUS-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "B",
+            "finalNumericGradeEarned": 83,
+            "courseCode": "PE-03",
+            "courseTitle": "Physical Education, Grades 1-6",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "PE-03"
+              },
+              {
+                "localCourseCode": "PE-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "A",
+            "finalNumericGradeEarned": 96,
+            "courseCode": "SCI-03",
+            "courseTitle": "Science, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Science",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "SCI-03"
+              },
+              {
+                "localCourseCode": "SCI-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "B",
+            "finalNumericGradeEarned": 88,
+            "courseCode": "SS-03",
+            "courseTitle": "Social Studies, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "SS-03"
+              },
+              {
+                "localCourseCode": "SS-03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "schoolYear": 2012,
+        "termDescriptor": "uri://ed-fi.org/TermDescriptor#Spring Semester",
+        "cumulativeEarnedCredits": 13.5,
+        "educationOrganizationId": 255901107,
+        "educationOrganizationType": "edfi.School",
+        "diplomas": [],
+        "academicHonor": [],
+        "transcript": [
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "A",
+            "finalNumericGradeEarned": 97,
+            "courseCode": "ART-03",
+            "courseTitle": "Art, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "ART-03"
+              },
+              {
+                "localCourseCode": "ART-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "D",
+            "finalNumericGradeEarned": 66,
+            "courseCode": "ELA-03",
+            "courseTitle": "English Language Arts, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "ELA-03"
+              },
+              {
+                "localCourseCode": "ELA-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "A",
+            "finalNumericGradeEarned": 92,
+            "courseCode": "MATH-03",
+            "courseTitle": "Mathematics, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "MATH-03"
+              },
+              {
+                "localCourseCode": "MATH-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "B",
+            "finalNumericGradeEarned": 86,
+            "courseCode": "MUS-03",
+            "courseTitle": "Music, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "MUS-03"
+              },
+              {
+                "localCourseCode": "MUS-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "A",
+            "finalNumericGradeEarned": 95,
+            "courseCode": "PE-03",
+            "courseTitle": "Physical Education, Grades 1-6",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "PE-03"
+              },
+              {
+                "localCourseCode": "PE-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "B",
+            "finalNumericGradeEarned": 86,
+            "courseCode": "SCI-03",
+            "courseTitle": "Science, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Science",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "SCI-03"
+              },
+              {
+                "localCourseCode": "SCI-03"
+              }
+            ]
+          },
+          {
+            "courseAttemptResultDescriptor": "uri://ed-fi.org/CourseAttemptResultDescriptor#Pass",
+            "attemptedCredits": 1,
+            "earnedCredits": 1,
+            "methodCreditEarnedDescriptor": "uri://ed-fi.org/MethodCreditEarnedDescriptor#Classroom credit",
+            "whenTakenGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+            "finalLetterGradeEarned": "C",
+            "finalNumericGradeEarned": 74,
+            "courseCode": "SS-03",
+            "courseTitle": "Social Studies, Grade 3",
+            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies",
+            "highSchoolCourseRequirement": false,
+            "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+            "courseOfferings": [
+              {
+                "localCourseCode": "SS-03"
+              },
+              {
+                "localCourseCode": "SS-03"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "assessments": [
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Reading 1st Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "1",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-10-29T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Reading 2nd Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "10",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-10-29T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Reading 2nd Six Weeks 2012-2013 Spanish",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "3",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Modified Math 1st Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "6",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-10-29T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Modified Reading 2nd Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "5",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Reading 1st Six Weeks 2012-2013 Spanish",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "8",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Math 1st Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "8",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Modified Reading 1st Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "1",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-10-29T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Math 2nd Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "1",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      },
+      {
+        "administrationDate": "2012-09-28T15:00:00Z",
+        "whenAssessedGradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade",
+        "assessmentTitle": "3rd Grade Modified Math 2nd Six Weeks 2012-2013",
+        "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test",
+        "assessmentVersion": 2012,
+        "maxRawScore": 10,
+        "scoreResults": [
+          {
+            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+            "result": "8",
+            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+          }
+        ],
+        "performanceLevels": []
+      }
+    ]
+  }
+]

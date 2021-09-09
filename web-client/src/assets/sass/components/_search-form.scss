@@ -1,0 +1,21 @@
+.search-form {
+  position: relative;
+
+  &.large {
+    width: 270px;
+  }
+
+  .form-control {
+    padding-left: 42px;
+    @include m(error) {
+      border-color: $error-color;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+}

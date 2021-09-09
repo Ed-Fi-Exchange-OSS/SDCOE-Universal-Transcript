@@ -1,0 +1,26 @@
+[
+  {
+    "schoolResourceId": "1d4f3e85e7fd4b55aed460d41fd26589",
+    "schoolId": 255901001,
+    "nameOfInstitution": "Grand Bend High School",
+    "districtResourceId": "922d768f6b3f4ed78ce77d13e44b505a",
+    "districtId": 255901,
+    "nameOfDistrict": "Grand Bend ISD"
+  },
+  {
+    "schoolResourceId": "caf986184c19428c8489119d13353fcb",
+    "schoolId": 255901044,
+    "nameOfInstitution": "Grand Bend Middle School",
+    "districtResourceId": "922d768f6b3f4ed78ce77d13e44b505a",
+    "districtId": 255901,
+    "nameOfDistrict": "Grand Bend ISD"
+  },
+  {
+    "schoolResourceId": "461bf6cbf8834ed0bd76670f40790bd0",
+    "schoolId": 255901107,
+    "nameOfInstitution": "Grand Bend Elementary School",
+    "districtResourceId": "922d768f6b3f4ed78ce77d13e44b505a",
+    "districtId": 255901,
+    "nameOfDistrict": "Grand Bend ISD"
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "name": "sdcoe-transcript-api",
+  "version": "1.0.0",
+  "description": "SDCOE Transcript API ",
+  "scripts": {
+    "start": "node dist",
+    "server": "babel-node ./src/index.js",
+    "setup-cron": "set NODE_ENV=production && babel-node ./src/scripts/cron.js",
+    "setup-cron-linux": "NODE_ENV=production babel-node ./src/scripts/cron.js",
+    "send-reset-link": "babel-node ./src/scripts/sendResetLink.js $npm_config_email",
+    "prestart": "yarn build",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "codecov": "cat coverage/*/lcov.info | codecov",
+    "knex": "babel-node node_modules/.bin/knex",
+    "seed": "babel-node node_modules/knex/bin/cli.js --knexfile src/knexfile.js seed:run",
+    "migrate": "babel-node node_modules/knex/bin/cli.js --knexfile src/knexfile.js migrate:latest",
+    "rollback": "babel-node node_modules/knex/bin/cli.js migrate:rollback --knexfile src/knexfile.js",
+    "prettier": "prettier --write **/*.{js,json,yml,yaml,md}",
+    "make:seeder": "babel-node node_modules/knex/bin/cli.js seed:make --knexfile src/knexfile.js",
+    "make:migration": "babel-node node_modules/knex/bin/cli.js migrate:make --knexfile src/knexfile.js",
+    "build": "rimraf dist && babel src --copy-files --out-dir dist --source-maps",
+    "start:dev": "nodemon --watch .env --watch src --exec babel-node src --source-maps",
+    "test": "cross-env NODE_ENV=test mocha --exit --recursive --require @babel/register test",
+    "test:coverage": "cross-env NODE_ENV=test nyc --require @babel/register --reporter lcov --reporter text mocha --exit --recursive test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,yml,yml,json}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "sdcoe",
+    "digital-transcript"
+  ],
+  "private": true,
+  "author": "Leapfrog Technology",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1",
+    "babel-node": "^0.0.1-security",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "bookshelf": "^1.2.0",
+    "bookshelf-virtuals-plugin": "^1.0.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "email-utils": "../email-utils",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "http-status-codes": "^2.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.4",
+    "knex": "^0.21.13",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0",
+    "mssql": "^6.3.1",
+    "objection": "2.2.3",
+    "pdf-utils": "../pdf-utils",
+    "pg": "^8.6.0",
+    "serve-favicon": "^2.5.0",
+    "transcript-backend": "../transcript-backend",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "chai": "^4.2.0",
+    "codecov": "^3.8.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.15.0",
+    "eslint-config-leapfrog": "^3.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.0.1"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 6.4.1",
+    "yarn": ">= 1.20.0"
+  }
+}
